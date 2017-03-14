@@ -10,13 +10,13 @@ const contextMenu = electron.Menu.buildFromTemplate([
   {
     label: 'About',
     click() {
-      electron.dialog.showMessageBox({title: "Glyphilectron", type:"info", message: "Find Bootstrap Glyphicons right from the menubar/tray. \nMIT Copyright (c) 2016 Amit Merchant <bullredeyes@gmail.com>", buttons: ["Close"] });
+      electron.dialog.showMessageBox({title: "Pomolectron", type:"info", message: "A pomodoro app in your menubar/tray. \nMIT Copyright (c) 2017 Amit Merchant <bullredeyes@gmail.com>", buttons: ["Close"] });
     }
   },
   {
     label: 'Website',
     click() {
-      electron.shell.openExternal("https://github.com/amitmerchant1990/glyphilectron");
+      electron.shell.openExternal("https://github.com/amitmerchant1990/pomolectron");
     }
   },
   {
@@ -32,9 +32,7 @@ const contextMenu = electron.Menu.buildFromTemplate([
 ]);
 
 ipcMain.on('closeApp', (event, close) => {
-
   mb.app.quit();
-
 });
 
 mb.on('ready', function ready () {
@@ -44,13 +42,11 @@ mb.on('ready', function ready () {
     pinned: false
   }
 
-  console.log('Glyphilectron is ready to serve in the menubar.');
+  console.log('Pomolectron is ready to serve in the menubar.');
 
   if (process.platform == 'win32') {
     mb.tray.setContextMenu(contextMenu);
   }
-  console.log(mb);
-  //mb.window.openDevTools()
 });
 
 mb.on('after-create-window', function(){

@@ -14,12 +14,12 @@ function notifyUser() {
   if (Notification.permission !== "granted")
     Notification.requestPermission();
   else {
-    var notification = new Notification('Notification title', {
+    var notification = new Notification('Buzzz!! Time\'s up', {
       icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
       body: "Hey there! You've been notified!"
     });
 
-    var notiSound=document.getElementById('notiSound');
+    //var notiSound=document.getElementById('notiSound');
     //notiSound.play();
 
     //setTimeout( function () { notification.close(); }, 3000);
@@ -27,14 +27,5 @@ function notifyUser() {
     notification.onclose = function(){
       //notiSound.pause();
     }
-
-    notification.onclick = function () {
-      window.open("http://stackoverflow.com/a/13328397/1269037");
-    };
   }
-}
-
-function closeApp(){
-  ipc.send('closeApp', 'close');
-
 }

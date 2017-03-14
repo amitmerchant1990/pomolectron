@@ -83,6 +83,10 @@ function startTimer(duration, display) {
     if (--timer < 0) {
         timer = duration;
     }
+
+    if(minutes == 0 && seconds == 0){
+      notifyUser();
+    }
   }, 1000);
 }
 
@@ -92,6 +96,10 @@ function stopTimer(){
 
 function resetTimer() {
   clearInterval(pomodoroIntervalId);
+}
+
+function closeApp(){
+  ipc.send('closeApp', 'close');
 }
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
