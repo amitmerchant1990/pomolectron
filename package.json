@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amitmerchant1990/glyphilectron",
-    "docs": "https://github.com/amitmerchant1990/glyphilectron/blob/master/README.md"
+    "url": "git+https://github.com/amitmerchant1990/pomolectron",
+    "docs": "https://github.com/amitmerchant1990/pomolectron/blob/master/README.md"
   },
   "keywords": [
     "electron",
@@ -26,9 +26,9 @@
   "author": "Amit Merchant <bullredeyes@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amitmerchant1990/glyphilectron/issues"
+    "url": "https://github.com/amitmerchant1990/pomolectron/issues"
   },
-  "homepage": "https://github.com/amitmerchant1990/glyphilectron#readme",
+  "homepage": "https://github.com/amitmerchant1990/pomolectron#readme",
   "_npmUser": {
     "name": "amit_merchant",
     "email": "bullredeyes@gmail.com"

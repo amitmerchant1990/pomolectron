@@ -1,20 +1,18 @@
-Glyphilectron
+Pomolectron
 ==============
 
-> Find over 250 [Bootstrap's Glyphicons](http://getbootstrap.com/components/#glyphicons) right from the menubar/tray.
-
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/glyphilectron/master/res/glyphilectron.gif)
+> A [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) app in your menubar/tray.
 
 ## How To Use
 
-Install it using : `npm install glyphilectron`
+Install it using : `npm install pomolectron`
 
 *Or*
 
 Clone this repository, and run.
 
 ```
-$> cd PATH-TO-GLYPHILECTRON
+$> cd PATH-TO-POMOLECTRON
 $> npm install && npm start
 ```
 
