@@ -4,7 +4,7 @@ var menubar = require('menubar');
 
 const ipcMain = require('electron').ipcMain;
 
-var mb = menubar({dir:__dirname, tooltip: "Glyphilectron", icon:__dirname + "/res/icon.png", width:324, height:420, resizable: false, alwaysOnTop :true});
+var mb = menubar({dir:__dirname, tooltip: "Glyphilectron", icon:__dirname + "/res/tomato.png", width:324, height:420, resizable: false, alwaysOnTop :true});
 
 const contextMenu = electron.Menu.buildFromTemplate([
   {
