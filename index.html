@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle custom-btn" onclick="closeApp();">
+            <i class="glyphicon glyphicon-off"></i>
+          </button>
+          <a class="navbar-brand" href="#">Pomolectron</a>
+        </div>
+
+      </div>
+    </nav>
+
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#pomodoro">Pomodoro</a></li>
+      <li><a data-toggle="tab" href="#short">Short break</a></li>
+      <li><a data-toggle="tab" href="#long">Long break</a></li>
+
+    </ul>
+    <div class="tab-content">
+      <div id="pomodoro" class="tab-pane fade in active">
+        <div class="container">
+
+          <div class="starter-template">
+            <h1 id="time">25:00</h1>
+          </div>
+
+        </div>
+
+        <div class="container">
+
+          <div class="starter-template">
+            <div class="row">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-primary full-width" id="start">Start</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" id="stop" class="btn btn-large btn-success full-width">Stop</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-danger full-width" id="reset">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="short" class="tab-pane fade in">
+        <div class="container">
+
+          <div class="starter-template">
+            <h1 id="time_short">05:00</h1>
+          </div>
+
+        </div>
+
+        <div class="container">
+
+          <div class="starter-template">
+            <div class="row">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-primary full-width" id="short_start">Start</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-success full-width" id="short_stop">Stop</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-danger full-width" id="short_reset">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="long" class="tab-pane fade in">
+        <div class="container">
+
+          <div class="starter-template">
+            <h1 id="time_long">10:00</h1>
+          </div>
+
+        </div>
+
+        <div class="container">
+
+          <div class="starter-template">
+            <div class="row">
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-primary full-width" id="long_start">Start</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-success full-width" id="long_stop">Stop</button>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-large btn-danger full-width" id="long_reset">Reset</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <audio id='notiSound' src='audio/alert.wav' loop/>
+
+    <script type="text/javascript">
+    if (typeof module === 'object') {
+      var electron = require('electron');
+      // Require in any additional modules that are Node.js only
+      window.module = module;
+      module = undefined;
+    }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  padding-top: 55px;
+  overflow-y:hidden;
+}
+.starter-template {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+.full-width{
+  width:100% !important;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+h1 {
+   font-size: 80px;
+}
+
+.nav-tabs > li {
+    /* width = (100 / number of tabs). This example assumes 3 tabs. */
+    width:33.33333%;
+    text-align: center;
+}
+
+.custom-btn{
+  color: #fff;
+  border-color: #fff;
+}
+
+.navbar {min-height:20px !important}
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 5em;
+    }
+}
