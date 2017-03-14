@@ -1,7 +1,7 @@
 Pomolectron
 ==============
 
-> A [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) app in your menubar/tray.
+> :tomato: A [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) app in your menubar/tray.
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG)
 
