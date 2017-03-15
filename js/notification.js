@@ -15,7 +15,7 @@ function notifyUser() {
     Notification.requestPermission();
   else {
     var notification = new Notification('Buzzz!! Time\'s up', {
-      icon: 'http://cdn.sstatic.net/stackexchange/img/logos/so/so-icon.png',
+      icon: 'https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/tomato-big.png',
       body: "Hey there! You've been notified!"
     });
 
