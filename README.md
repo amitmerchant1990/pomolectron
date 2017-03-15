@@ -9,7 +9,7 @@
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG"/>
+  <img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG" style="box-shadow: #000 0px 2px 20px 1px"/>
 </p>
 
 ## Key Features
