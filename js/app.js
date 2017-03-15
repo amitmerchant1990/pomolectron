@@ -1,10 +1,17 @@
 'use strict';
+const shell = require('electron').shell;
+
 var timer, minutes = 25, seconds = 60,
     pomodoroIntervalId, pomodoroTime;
 
 var display = document.querySelector('#time');
 var display_short = document.querySelector('#time_short');
 var display_long = document.querySelector('#time_long');
+
+$(document).on('click', 'a[href^="http"]', function(event) {
+    event.preventDefault();
+    shell.openExternal(this.href);
+});
 
 $('#start').click(() => {
   if(minutes == 25 && seconds == 60){
@@ -71,7 +78,12 @@ $('#long_reset').click(() => {
 
 function startTimer(duration, display) {
   timer = duration;
+  clearInterval(pomodoroIntervalId);
   pomodoroIntervalId = setInterval(function(){
+    if (--timer < 0) {
+        timer = duration;
+    }
+
     minutes = parseInt(timer/60, 10);
     seconds = parseInt(timer%60, 10);
 
@@ -80,12 +92,9 @@ function startTimer(duration, display) {
 
     display.textContent = minutes+ ":" + seconds;
 
-    if (--timer < 0) {
-        timer = duration;
-    }
-
     if(minutes == 0 && seconds == 0){
       notifyUser();
+      stopTimer();
     }
   }, 1000);
 }

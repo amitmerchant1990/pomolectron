@@ -28,6 +28,11 @@ h1 {
   border-color: #fff;
 }
 
+.custom-btn:hover{
+  color: #fff;
+  border-color: #fff;
+}
+
 .navbar {min-height:20px !important}
 
 /* xs < 768 */
