@@ -8,8 +8,8 @@
 
 <br>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG" style="box-shadow: #000 0px 2px 20px 1px"/>
+<p align="center" style="box-shadow: #000 0px 2px 20px 1px">
+  <img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG"/>
 </p>
 
 ## Key Features
