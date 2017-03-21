@@ -6,6 +6,16 @@
 
 <h4 align="center">A <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">pomodoro</a> app in your menubar/tray.</h4>
 
+<p align="center">
+  <a href="https://badge.fury.io/js/pomolectron">
+    <img src="https://badge.fury.io/js/pomolectron.svg" alt="npm version" height="18">
+  </a>
+  <a href="https://saythanks.io/to/amitmerchant1990">
+    <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+  </a>
+</p>
+<br>
+
 <br>
 
 <p align="center" style="box-shadow: #000 0px 2px 20px 1px">
