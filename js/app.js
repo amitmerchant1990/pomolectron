@@ -21,10 +21,14 @@ $('#start').click(() => {
   }
 
   startTimer(pomodoroTime, display);
+  $('#stop').show();
+  $('#start').hide();
 })
 
 $('#stop').click(() => {
   stopTimer();
+  $('#start').show();
+  $('#stop').hide();
 });
 
 $('#reset').click(() => {
@@ -32,6 +36,9 @@ $('#reset').click(() => {
   seconds = 60;
   display.textContent = "25:00";
   resetTimer();
+
+  $('#start').show();
+  $('#stop').hide();
 });
 
 $('#short_start').click(() => {
@@ -42,10 +49,14 @@ $('#short_start').click(() => {
   }
 
   startTimer(pomodoroTime, display_short);
+  $('#short_stop').show();
+  $('#short_start').hide();
 })
 
 $('#short_stop').click(() => {
   stopTimer();
+  $('#short_start').show();
+  $('#short_stop').hide();
 });
 
 $('#short_reset').click(() => {
@@ -53,6 +64,9 @@ $('#short_reset').click(() => {
   seconds = 60;
   display_short.textContent = "05:00";
   resetTimer(display_short);
+
+  $('#short_start').show();
+  $('#short_stop').hide();
 });
 
 $('#long_start').click(() => {
@@ -63,10 +77,15 @@ $('#long_start').click(() => {
   }
 
   startTimer(pomodoroTime, display_long);
+
+  $('#long_stop').show();
+  $('#long_start').hide();
 })
 
 $('#long_stop').click(() => {
   stopTimer();
+  $('#long_start').show();
+  $('#long_stop').hide();
 });
 
 $('#long_reset').click(() => {
@@ -74,6 +93,8 @@ $('#long_reset').click(() => {
   seconds = 60;
   display_long.textContent = "10:00";
   resetTimer();
+  $('#long_start').show();
+  $('#long_stop').hide();
 });
 
 function startTimer(duration, display) {

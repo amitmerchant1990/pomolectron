@@ -15,7 +15,7 @@ function notifyUser() {
     Notification.requestPermission();
   else {
     var notification = new Notification('Buzzz!! Time\'s up', {
-      icon: 'https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/tomato-big.png',
+      icon: 'res/tomato-big.png',
       body: "Hey there! You've been notified!"
     });
 

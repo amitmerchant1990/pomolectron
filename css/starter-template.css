@@ -1,14 +1,13 @@
 body {
-  padding-top: 55px;
+  padding-top: 34px;
   overflow-y:hidden;
 }
 .starter-template {
-  padding: 15px 15px;
   text-align: center;
 }
 
 .full-width{
-  width:100% !important;
+  /*width:50% !important;*/
   margin-bottom: 10px;
   font-size: 20px;
 }
@@ -17,10 +16,24 @@ h1 {
    font-size: 80px;
 }
 
+.btn-success{
+  display: none;
+}
+
+.nav > li > a {
+    padding: 5px 5px !important;
+    margin-right: 0 !important;
+    color: black;
+}
+
 .nav-tabs > li {
     /* width = (100 / number of tabs). This example assumes 3 tabs. */
     width:33.33333%;
     text-align: center;
+}
+
+.nav-tabs>li.active>a{
+  font-weight:bold;
 }
 
 .custom-btn{
@@ -33,7 +46,24 @@ h1 {
   border-color: #fff;
 }
 
-.navbar {min-height:20px !important}
+.navbar {
+  min-height:26px;
+  line-height:26px;
+}
+
+.navbar-brand{
+  float: none;
+  text-align: center;
+  height: 30px;
+  padding: 10px 15px;
+  line-height: 33px;
+}
+
+.navbar-toggle{
+  padding: 0px 8px;
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
