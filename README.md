@@ -47,6 +47,11 @@ $> npm install && npm start
 
 You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) latest installable version of Pomolectron for Windows and Linux. Binaries of macOS are coming soon.
 
+You can also get the [Windows binaries](http://www.softpedia.com/get/Others/Miscellaneous/Pomolectron.shtml) from Softpedia.
+
+## News
+Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during it's launch day.
+
 ## License
 
 MIT
