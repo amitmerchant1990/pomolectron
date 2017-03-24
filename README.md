@@ -32,7 +32,13 @@
 
 ## How To Use
 
-Install it using : `npm install pomolectron`
+Install it using :
+
+```
+$> npm install pomolectron
+$> cd ~/node_modules/pomolectron/
+$> npm start
+```
 
 *Or*
 
