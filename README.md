@@ -28,7 +28,7 @@
 * Notifies via system notification when time gets up
 * Lives in a tray/menubar
 * Cross platform
-  - Windows, Mac and Linux ready.
+  - Windows, macOS and Linux ready.
 
 ## How To Use
 
@@ -50,7 +50,7 @@ You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/
 You can also get the [Windows binaries](http://www.softpedia.com/get/Others/Miscellaneous/Pomolectron.shtml) from Softpedia.
 
 ## News
-Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during it's launch day.
+Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during the day of it's launch.
 
 ## License
 
