@@ -18,9 +18,9 @@
 
 <br>
 
-<p align="center" style="box-shadow: #000 0px 2px 20px 1px">
-  <img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG"/>
-</p>
+|  Windows            |  macOS |
+|---------------------|----------------------|
+|![pomolectron-macos](https://cloud.githubusercontent.com/assets/3647841/24491376/9250a1de-1544-11e7-86ef-82b77c006daa.png) | ![](https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/res/pomodoro.PNG) |
 
 ## Key Features
 
