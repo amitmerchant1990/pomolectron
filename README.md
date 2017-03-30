@@ -45,7 +45,7 @@ $> npm install && npm start
 
 ## Download
 
-You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) latest installable version of Pomolectron for Windows and Linux. Binaries of macOS are coming soon.
+You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) latest installable version of Pomolectron for Windows, Linux and macOS.
 
 You can also get the [Windows binaries](http://www.softpedia.com/get/Others/Miscellaneous/Pomolectron.shtml) from Softpedia.
 
