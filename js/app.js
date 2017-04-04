@@ -44,8 +44,7 @@ class Timer {
         this.minutes = this.initialMinutes;
         this.seconds = this.initialSeconds;
         clearInterval(this.pomodoroIntervalId);
-        const lol =
-            document.querySelector(selector).textContent = `${this._getDoubleDigit(this.initialMinutes)}:00`;
+        document.querySelector(selector).textContent = `${this._getDoubleDigit(this.initialMinutes)}:00`;
     }
 
     _getDoubleDigit(number) {
