@@ -55,7 +55,7 @@ $ npm install
 $ npm start
 ```
 
-On Windows, you can install Pomolectron via [chocolatey](https://chocolatey.org)
+On Windows, you can install Pomolectron via [chocolatey](https://chocolatey.org) as well.
 
 ```bash
 C:\> choco install pomolectron
