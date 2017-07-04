@@ -10,12 +10,16 @@
   <a href="https://badge.fury.io/js/pomolectron">
     <img src="https://badge.fury.io/js/pomolectron.svg" alt="npm version" height="18">
   </a>
+  <a href="https://chocolatey.org/packages/pomolectron">
+    <img src="https://img.shields.io/chocolatey/dt/scriptcs.svg?style=flat">
+  </a>
   <a href="https://saythanks.io/to/amitmerchant1990">
     <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
   </a>
   <a href="https://www.paypal.me/AmitMerchant">
     <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
   </a>
+  
 </p>
 <br>
 
