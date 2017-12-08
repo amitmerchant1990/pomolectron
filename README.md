@@ -49,7 +49,7 @@ $ cd pomolectron
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run serve
 ```
 
 On Windows, you can install Pomolectron via [chocolatey](https://chocolatey.org) as well.

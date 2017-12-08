@@ -31,7 +31,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle custom-btn" onclick="closeApp();" title="Close Pomolectron">
+          <button type="button" class="navbar-toggle custom-btn" id="close" title="Close Pomolectron">
             <i class="glyphicon glyphicon-off"></i>
           </button>
           <a href="https://github.com/amitmerchant1990/pomolectron" type="button" class="navbar-toggle custom-btn" title="About">
@@ -129,19 +129,16 @@
       </div>
     </div>
 
-    <audio id='notiSound' src='audio/alert.wav' loop/>
+    <audio id='notiSound' src='audio/alert.wav' loop></audio>
 
-    <script type="text/javascript">
-    if (typeof module === 'object') {
-      var electron = require('electron');
-      // Require in any additional modules that are Node.js only
-      window.module = module;
-      module = undefined;
-    }
+    <script>
+      if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+      }
     </script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/notification.js"></script>
-    <script src="js/app.js"></script>
+    <script src="http://localhost:3000/vendor.bundle.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="http://localhost:3000/app.bundle.js"></script>
   </body>
 </html>
