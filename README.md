@@ -4,7 +4,7 @@
   <br>
 </h1>
 
-<h4 align="center">A <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">pomodoro</a> app in your menubar/tray.</h4>
+<h4 align="center">A <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">pomodoro</a> app for your menubar/tray.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/pomolectron">
