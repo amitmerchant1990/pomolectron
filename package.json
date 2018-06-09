@@ -5,7 +5,7 @@
   "main": "index.js",
   "productName": "Pomolectron",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron ./app"
   },
   "repository": {
     "type": "git",
