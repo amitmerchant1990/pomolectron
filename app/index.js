@@ -46,6 +46,10 @@ mb.on('ready', function ready () {
 
   if (process.platform == 'win32') {
     mb.tray.setContextMenu(contextMenu);
+  }else{
+    mb.tray.on("right-click", () => {
+      mb.tray.popUpContextMenu(contextMenu);
+    });
   }
 });
 
