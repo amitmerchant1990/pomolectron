@@ -29,7 +29,7 @@
 ## Key Features
 
 * Pomodoro, Short break and Long break timers
-* Notifies via system notification when time gets up
+* Notifies via a system notification when time is up
 * Lives in a tray/menubar
 * Cross platform
   - Windows, macOS and Linux ready.
@@ -66,12 +66,12 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 ## Download
 
-You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) latest installable version of Pomolectron for Windows, Linux and macOS.
+You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) the latest installable version of Pomolectron for Windows, Linux and macOS.
 
 You can also get the [Windows binaries](http://www.softpedia.com/get/Others/Miscellaneous/Pomolectron.shtml) from Softpedia.
 
 ## News
-Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during the day of it's launch.
+Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during the day of its launch.
 
 ## You may also like..
 
