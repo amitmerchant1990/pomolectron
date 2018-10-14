@@ -65,6 +65,7 @@ class ThemeManager {
   constructor() {
     this.activeTheme = 'light';
     this.nodes = document.querySelectorAll('link[rel=stylesheet].alternate');
+    this.tabTitles = $('.nav > li > a');
   }
 
   toggleTheme() {
@@ -77,6 +78,7 @@ class ThemeManager {
           node.disabled = true;
         }
       })
+      this.tabTitles.toggleClass( "dark");
     }else{
       this.activeTheme = 'light';
       this.nodes.forEach(function(node){
@@ -86,6 +88,7 @@ class ThemeManager {
           node.disabled = true;
         }
       })
+      this.tabTitles.toggleClass( "dark");
     }
   }
 }
