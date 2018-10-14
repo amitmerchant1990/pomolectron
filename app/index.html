@@ -12,7 +12,8 @@
     <title> Pomolectron </title>
 
     <!-- Bootstrap core styles -->
-    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/bootstrap.min.css" rel="stylesheet" id="light" class='alternate'>
+    <link href="styles/bootstrap.dark.min.css" rel="stylesheet" id="dark" class='alternate' disabled>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -37,6 +38,9 @@
           <a href="https://github.com/amitmerchant1990/pomolectron" type="button" class="navbar-toggle custom-btn" title="About">
             <i class="glyphicon glyphicon-info-sign"></i>
           </a>
+          <button type="button" class="navbar-toggle custom-btn" onclick="toggleTheme();" title="Toggle theme">
+            <i class="glyphicon glyphicon-refresh"></i>
+          </button>
           <a class="navbar-brand" href="#">Pomolectron</a>
         </div>
 

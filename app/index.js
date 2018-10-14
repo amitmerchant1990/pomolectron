@@ -7,7 +7,7 @@ var mb = menubar({
   dir:__dirname, 
   tooltip: "Pomolectron", 
   icon:__dirname + "/res/tomato.png", 
-  width:278, height:250, 
+  width:300, height:250, 
   resizable: false, 
   alwaysOnTop :true
 });
