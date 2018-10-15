@@ -61,6 +61,41 @@ class Timer {
     }
 }
 
+class ThemeManager {
+  constructor() {
+    this.activeTheme = 'light';
+    this.nodes = document.querySelectorAll('link[rel=stylesheet].alternate');
+    this.tabTitles = $('.nav > li > a');
+  }
+
+  toggleTheme() {
+    if(this.activeTheme === 'light') {
+      this.activeTheme = 'dark';
+      this.nodes.forEach(function(node){
+        if(node.id==='dark'){
+          node.disabled = false;
+        }else{
+          node.disabled = true;
+        }
+      })
+      this.tabTitles.toggleClass( "dark");
+    }else{
+      this.activeTheme = 'light';
+      this.nodes.forEach(function(node){
+        if(node.id==='light'){
+          node.disabled = false;
+        }else{
+          node.disabled = true;
+        }
+      })
+      this.tabTitles.toggleClass( "dark");
+    }
+  }
+}
+
+let themeManager = new ThemeManager();
+
+
 var display = document.querySelector('#time');
 var display_short = document.querySelector('#time_short');
 var display_long = document.querySelector('#time_long');
@@ -140,6 +175,10 @@ $('#long_reset').click(() => {
 
 function closeApp() {
     ipc.send('closeApp', 'close');
+}
+
+function toggleTheme() {
+  themeManager.toggleTheme();
 }
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {

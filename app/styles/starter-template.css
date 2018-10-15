@@ -26,6 +26,12 @@ h1 {
     color: black;
 }
 
+.nav > li > a.dark {
+  padding: 5px 5px !important;
+  margin-right: 0 !important;
+  color: white;
+}
+
 .nav-tabs > li {
     /* width = (100 / number of tabs). This example assumes 3 tabs. */
     width:33.33333%;
