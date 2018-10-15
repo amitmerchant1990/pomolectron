@@ -36,7 +36,7 @@
 
 ## Dark Mode
 
-![pomolectron-dark](app/res/pomolectron-dark.png)
+<div align="center"><img src="app/res/pomolectron-dark.png"></div>
   
 <a href="https://www.patreon.com/amitmerchant">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
