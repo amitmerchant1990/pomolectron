@@ -34,14 +34,15 @@
 * Cross platform
   - Windows, macOS and Linux ready.
 
-## Dark Mode
-
-<div align="center"><img src="app/res/pomolectron-dark.png"></div>
-  
 <a href="https://www.patreon.com/amitmerchant">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
+
+## Dark Mode
+
+<div align="center"><img src="app/res/pomolectron-dark.png"></div>
+  
 ## How To Use
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
