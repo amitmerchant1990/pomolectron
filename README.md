@@ -26,10 +26,6 @@
 |---------------------|----------------------|
 |![pomolectron-macos](https://cloud.githubusercontent.com/assets/3647841/24491376/9250a1de-1544-11e7-86ef-82b77c006daa.png) | ![](https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/app/res/pomodoro.PNG) |
 
-|     Dark Mode   |
-|-----------|
-|![pomolectron-dark](app/res/pomolectron-dark.png)|
-
 ## Key Features
 
 * Pomodoro, Short break and Long break timers
@@ -37,6 +33,10 @@
 * Lives in a tray/menubar
 * Cross platform
   - Windows, macOS and Linux ready.
+
+## Dark Mode
+
+![pomolectron-dark](app/res/pomolectron-dark.png)
   
 <a href="https://www.patreon.com/amitmerchant">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
