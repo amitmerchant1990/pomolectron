@@ -61,7 +61,7 @@ $ npm install
 $ npm start
 ```
 
-On MacOS, you can install Pomolectron via [cask](http://caskroom.io/).
+On macOS, you can install Pomolectron via [cask](http://caskroom.io/).
 
 ```bash
 $ brew cask install pomolectron 
