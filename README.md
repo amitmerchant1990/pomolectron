@@ -61,6 +61,12 @@ $ npm install
 $ npm start
 ```
 
+On Mac, you can install Pomoelectron via [cask](http://caskroom.io/).
+
+```bash
+$ brew cask install pomolectron 
+```
+
 On Windows, you can install Pomolectron via [chocolatey](https://chocolatey.org) as well.
 
 ```bash
@@ -74,6 +80,7 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 You can [download](https://github.com/amitmerchant1990/pomolectron/releases/tag/v1.1.0) the latest installable version of Pomolectron for Windows, Linux and macOS.
 
 You can also get the [Windows binaries](http://www.softpedia.com/get/Others/Miscellaneous/Pomolectron.shtml) from Softpedia.
+
 
 ## News
 Pomolectron was [trending](https://news.ycombinator.com/item?id=13878898) on the Hacker News and on [GitHub](https://raw.githubusercontent.com/amitmerchant1990/test/master/trending.JPG) during the day of its launch.
