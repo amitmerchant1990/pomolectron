@@ -40,6 +40,6 @@
     "gulp": "^3.9.1"
   },
   "dependencies": {
-    "menubar": "latest"
+    "menubar": "5.2.3"
   }
 }
