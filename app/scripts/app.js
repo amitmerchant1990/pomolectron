@@ -62,35 +62,35 @@ class Timer {
 }
 
 class ThemeManager {
-  constructor() {
-    this.activeTheme = 'light';
-    this.nodes = document.querySelectorAll('link[rel=stylesheet].alternate');
-    this.tabTitles = $('.nav > li > a');
-  }
-
-  toggleTheme() {
-    if(this.activeTheme === 'light') {
-      this.activeTheme = 'dark';
-      this.nodes.forEach(function(node){
-        if(node.id==='dark'){
-          node.disabled = false;
-        }else{
-          node.disabled = true;
-        }
-      })
-      this.tabTitles.toggleClass( "dark");
-    }else{
-      this.activeTheme = 'light';
-      this.nodes.forEach(function(node){
-        if(node.id==='light'){
-          node.disabled = false;
-        }else{
-          node.disabled = true;
-        }
-      })
-      this.tabTitles.toggleClass( "dark");
+    constructor() {
+        this.activeTheme = 'light';
+        this.nodes = document.querySelectorAll('link[rel=stylesheet].alternate');
+        this.tabTitles = $('.nav > li > a');
     }
-  }
+
+    toggleTheme() {
+        if (this.activeTheme === 'light') {
+            this.activeTheme = 'dark';
+            this.nodes.forEach(function (node) {
+                if (node.id === 'dark') {
+                    node.disabled = false;
+                } else {
+                    node.disabled = true;
+                }
+            })
+            this.tabTitles.toggleClass("dark");
+        } else {
+            this.activeTheme = 'light';
+            this.nodes.forEach(function (node) {
+                if (node.id === 'light') {
+                    node.disabled = false;
+                } else {
+                    node.disabled = true;
+                }
+            })
+            this.tabTitles.toggleClass("dark");
+        }
+    }
 }
 
 let themeManager = new ThemeManager();
@@ -178,7 +178,7 @@ function closeApp() {
 }
 
 function toggleTheme() {
-  themeManager.toggleTheme();
+    themeManager.toggleTheme();
 }
 
 $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
