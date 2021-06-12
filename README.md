@@ -64,7 +64,7 @@ $ npm start
 On macOS, you can install Pomolectron via [cask](http://caskroom.io/).
 
 ```bash
-$ brew cask install pomolectron 
+$ brew install --cask pomolectron 
 ```
 
 On Windows, you can install Pomolectron via [chocolatey](https://chocolatey.org) as well.
