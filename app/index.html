@@ -1,151 +1,162 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title> Pomolectron </title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Bootstrap core styles -->
-    <link href="styles/bootstrap.min.css" rel="stylesheet" id="light" class='alternate'>
-    <link href="styles/bootstrap.dark.min.css" rel="stylesheet" id="dark" class='alternate' disabled>
+  <title> Pomolectron </title>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Bootstrap core styles -->
+  <link href="styles/bootstrap.min.css" rel="stylesheet" id="light" class='alternate'>
+  <link href="styles/bootstrap.dark.min.css" rel="stylesheet" id="dark" class='alternate' disabled>
 
-    <!-- Custom styles for this template -->
-    <link href="styles/starter-template.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <!-- Custom styles for this template -->
+  <link href="styles/starter-template.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      p src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle custom-btn" onclick="closeApp();" title="Close Pomolectron">
+          <i class="glyphicon glyphicon-off"></i>
+        </button>
+        <a href="https://github.com/amitmerchant1990/pomolectron" type="button" class="navbar-toggle custom-btn"
+          title="About">
+          <i class="glyphicon glyphicon-info-sign"></i>
+        </a>
+        <button type="button" class="navbar-toggle custom-btn" onclick="toggleTheme();" title="Toggle theme">
+          <i class="glyphicon glyphicon-refresh"></i>
+        </button>
+        <a class="navbar-brand" href="#">Pomolectron</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#pomodoro">Pomodoro</a></li>
+    <li><a data-toggle="tab" href="#short">Short break</a></li>
+    <li><a data-toggle="tab" href="#long">Long break</a></li>
+
+  </ul>
+  <div class="tab-content">
+    <div id="pomodoro" class="tab-pane fade in active">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle custom-btn" onclick="closeApp();" title="Close Pomolectron">
-            <i class="glyphicon glyphicon-off"></i>
-          </button>
-          <a href="https://github.com/amitmerchant1990/pomolectron" type="button" class="navbar-toggle custom-btn" title="About">
-            <i class="glyphicon glyphicon-info-sign"></i>
-          </a>
-          <button type="button" class="navbar-toggle custom-btn" onclick="toggleTheme();" title="Toggle theme">
-            <i class="glyphicon glyphicon-refresh"></i>
-          </button>
-          <a class="navbar-brand" href="#">Pomolectron</a>
+
+        <div class="starter-template">
+          <h1 id="time">25:00</h1>
         </div>
 
       </div>
-    </nav>
 
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#pomodoro">Pomodoro</a></li>
-      <li><a data-toggle="tab" href="#short">Short break</a></li>
-      <li><a data-toggle="tab" href="#long">Long break</a></li>
+      <div class="container">
 
-    </ul>
-    <div class="tab-content">
-      <div id="pomodoro" class="tab-pane fade in active">
-        <div class="container">
+        <div class="starter-template">
+          <div class="row">
+            <div>
+              <button type="button" class="btn btn-large btn-primary full-width" id="start"><span
+                  class="glyphicon glyphicon-play"></span></button>
 
-          <div class="starter-template">
-            <h1 id="time">25:00</h1>
-          </div>
+              <button type="button" id="stop" class="btn btn-large btn-success full-width"><span
+                  class="glyphicon glyphicon-pause"></span></button>
 
-        </div>
-
-        <div class="container">
-
-          <div class="starter-template">
-            <div class="row">
-              <div>
-                <button type="button" class="btn btn-large btn-primary full-width" id="start"><span class="glyphicon glyphicon-play"></span></button>
-
-                <button type="button" id="stop" class="btn btn-large btn-success full-width"><span class="glyphicon glyphicon-pause"></span></button>
-
-                <button type="button" class="btn btn-large btn-danger full-width" id="reset"><span class="glyphicon glyphicon-repeat"></span></button>
-              </div>
+              <button type="button" class="btn btn-large btn-danger full-width" id="reset"><span
+                  class="glyphicon glyphicon-repeat"></span></button>
             </div>
           </div>
-
-        </div>
-      </div>
-
-      <div id="short" class="tab-pane fade in">
-        <div class="container">
-
-          <div class="starter-template">
-            <h1 id="time_short">05:00</h1>
-          </div>
-
         </div>
 
-        <div class="container">
-
-          <div class="starter-template">
-            <div class="row">
-              <div>
-                <button type="button" class="btn btn-large btn-primary full-width" id="short_start"><span class="glyphicon glyphicon-play"></span></button>
-
-                <button type="button" class="btn btn-large btn-success full-width" id="short_stop"><span class="glyphicon glyphicon-pause"></span></button>
-
-                <button type="button" class="btn btn-large btn-danger full-width" id="short_reset"><span class="glyphicon glyphicon-repeat"></span></button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div id="long" class="tab-pane fade in">
-        <div class="container">
-
-          <div class="starter-template">
-            <h1 id="time_long">10:00</h1>
-          </div>
-
-        </div>
-
-        <div class="container">
-
-          <div class="starter-template">
-            <div class="row">
-              <div>
-                <button type="button" class="btn btn-large btn-primary full-width" id="long_start"><span class="glyphicon glyphicon-play"></span></button>
-
-                <button type="button" class="btn btn-large btn-success full-width" id="long_stop"><span class="glyphicon glyphicon-pause"></span></button>
-
-                <button type="button" class="btn btn-large btn-danger full-width" id="long_reset"><span class="glyphicon glyphicon-repeat"></span></button>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
     </div>
 
-    <audio id='notiSound' src='audio/alert.wav' loop/>
+    <div id="short" class="tab-pane fade in">
+      <div class="container">
 
-    <script type="text/javascript">
+        <div class="starter-template">
+          <h1 id="time_short">05:00</h1>
+        </div>
+
+      </div>
+
+      <div class="container">
+
+        <div class="starter-template">
+          <div class="row">
+            <div>
+              <button type="button" class="btn btn-large btn-primary full-width" id="short_start"><span
+                  class="glyphicon glyphicon-play"></span></button>
+
+              <button type="button" class="btn btn-large btn-success full-width" id="short_stop"><span
+                  class="glyphicon glyphicon-pause"></span></button>
+
+              <button type="button" class="btn btn-large btn-danger full-width" id="short_reset"><span
+                  class="glyphicon glyphicon-repeat"></span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="long" class="tab-pane fade in">
+      <div class="container">
+
+        <div class="starter-template">
+          <h1 id="time_long">10:00</h1>
+        </div>
+
+      </div>
+
+      <div class="container">
+
+        <div class="starter-template">
+          <div class="row">
+            <div>
+              <button type="button" class="btn btn-large btn-primary full-width" id="long_start"><span
+                  class="glyphicon glyphicon-play"></span></button>
+
+              <button type="button" class="btn btn-large btn-success full-width" id="long_stop"><span
+                  class="glyphicon glyphicon-pause"></span></button>
+
+              <button type="button" class="btn btn-large btn-danger full-width" id="long_reset"><span
+                  class="glyphicon glyphicon-repeat"></span></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <audio id='notiSound' src='audio/alert.wav' loop />
+
+  <script type="text/javascript">
     if (typeof module === 'object') {
       var electron = require('electron');
       // Require in any additional modules that are Node.js only
       window.module = module;
       module = undefined;
     }
-    </script>
-    <script src="scripts/jquery.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/notification.js"></script>
-    <script src="scripts/app.js"></script>
-  </body>
+  </script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/notification.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+
 </html>

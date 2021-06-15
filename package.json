@@ -40,6 +40,5 @@
     "gulp": "^3.9.1"
   },
   "dependencies": {
-    "menubar": "latest"
   }
 }
