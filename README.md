@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/amitmerchant1990/pomolectron"><img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/app/res/pomolectron-transparent.png" alt="Pomolectron" width="400"></a>
+  <a href="https://github.com/amitmerchant1990/pomolectron"><img src="https://raw.githubusercontent.com/amitmerchant1990/pomolectron/master/app/res/pomolectron-transparent.png" alt="Pomolectron" width="200"></a>
   <br>
 </h1>
 
