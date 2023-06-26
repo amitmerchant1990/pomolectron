@@ -1,15 +1,17 @@
 'use strict';
 const electron = require('electron');
-const menubar = require('menubar');
+const { menubar } = require('menubar');
 const ipcMain = require('electron').ipcMain;
 
 var mb = menubar({
   dir:__dirname, 
   tooltip: "Pomolectron", 
-  icon:__dirname + "/res/tomato.png", 
-  width:300, height:250, 
-  resizable: false, 
-  alwaysOnTop :true
+  icon:__dirname + "/res/tomato.png",
+  browserWindow: {
+    width:300, 
+    height:250,
+    alwaysOnTop :true,
+  }
 });
 
 const contextMenu = electron.Menu.buildFromTemplate([
@@ -41,7 +43,7 @@ ipcMain.on('closeApp', (event, close) => {
   mb.app.quit();
 });
 
-mb.on('ready', function ready () {
+mb.on('ready', () => {
   global.sharedObj = {
     hide: mb.hideWindow,
     quit: mb.app.quit,
