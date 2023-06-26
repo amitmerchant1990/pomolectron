@@ -22,7 +22,7 @@
   
 </p>
 
-<p align="center">Featured in <a href="https://www.makeuseof.com/open-source-pomodoro-apps-productivity/">The 9 Best Open Source Pomodoro Apps for Productivity</a> on MakeUseOf.</p>
+<p align="center">Featured in <a href="https://www.makeuseof.com/open-source-pomodoro-apps-productivity/">The 9 Best Open Source Pomodoro Apps for Productivity</a> on MakeUseOf.com</p>
 
 |  macOS            |  Windows |
 |---------------------|----------------------|
