@@ -1,66 +1,77 @@
-'use strict';
-const electron = require('electron');
-const { menubar } = require('menubar');
-const ipcMain = require('electron').ipcMain;
+"use strict";
+const electron = require("electron");
+const { menubar } = require("menubar");
+const ipcMain = require("electron").ipcMain;
 
 var mb = menubar({
-  dir:__dirname, 
-  tooltip: "Pomolectron", 
-  icon:__dirname + "/res/tomato.png",
+  dir: __dirname,
+  tooltip: "Pomolectron",
+  icon: __dirname + "/res/tomato.png",
   browserWindow: {
-    width:300, 
-    height:250,
-    alwaysOnTop :true,
-  }
+    width: 300,
+    height: 250,
+    alwaysOnTop: false,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+    },
+  },
 });
 
 const contextMenu = electron.Menu.buildFromTemplate([
   {
-    label: 'About',
+    label: "About",
     click() {
-      electron.dialog.showMessageBox({title: "Pomolectron", type:"info", message: "A pomodoro app in your menubar/tray. \nMIT Copyright (c) 2017 Amit Merchant <bullredeyes@gmail.com>", buttons: ["Close"] });
-    }
+      electron.dialog.showMessageBox({
+        title: "Pomolectron",
+        type: "info",
+        message:
+          "A pomodoro app in your menubar/tray. \nMIT Copyright (c) 2017 Amit Merchant <bullredeyes@gmail.com>",
+        buttons: ["Close"],
+      });
+    },
   },
   {
-    label: 'Website',
+    label: "Website",
     click() {
-      electron.shell.openExternal("https://github.com/amitmerchant1990/pomolectron");
-    }
+      electron.shell.openExternal(
+        "https://github.com/amitmerchant1990/pomolectron",
+      );
+    },
   },
   {
-    type: 'separator'
+    type: "separator",
   },
   {
-    label: 'Quit',
+    label: "Quit",
     click() {
       mb.app.quit();
-    }
-  }
-
+    },
+  },
 ]);
 
-ipcMain.on('closeApp', (event, close) => {
+ipcMain.on("closeApp", (event, close) => {
   mb.app.quit();
 });
 
-mb.on('ready', () => {
+mb.on("ready", () => {
   global.sharedObj = {
     hide: mb.hideWindow,
     quit: mb.app.quit,
-    pinned: false
-  }
+    pinned: false,
+  };
 
-  console.log('Pomolectron is ready to serve in the menubar.');
+  console.log("Pomolectron is ready to serve in the menubar.");
 
-  if (process.platform == 'win32') {
+  if (process.platform == "win32") {
     mb.tray.setContextMenu(contextMenu);
-  }else{
+  } else {
     mb.tray.on("right-click", () => {
       mb.tray.popUpContextMenu(contextMenu);
     });
   }
 });
 
-mb.on('after-create-window', function(){
+mb.on("after-create-window", function () {
   //mb.window.openDevTools()
-})
+});
