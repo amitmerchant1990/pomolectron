@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "devtron": "^1.1.2",
-    "electron-packager": "^7.0.3",
+    "electron-packager": "^17.1.1",
     "electron": "latest",
     "gulp": "^3.9.1"
   },
