@@ -30,6 +30,11 @@
 
 ## Key Features
 
+## What's different in this fork
+
+
+
+
 * Pomodoro, Short break and Long break timers
 * Notifies via a system notification when time is up
 * Lives in a tray/menubar
